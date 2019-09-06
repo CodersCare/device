@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace CodersCare\Tracer\ExpressionLanguage\FunctionsProvider;
+namespace CodersCare\Device\ExpressionLanguage\FunctionsProvider;
 
 use DeviceDetector\DeviceDetector;
 use DeviceDetector\Parser\Device\DeviceParserAbstract;

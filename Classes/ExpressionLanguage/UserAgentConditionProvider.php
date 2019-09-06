@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace CodersCare\Tracer\ExpressionLanguage;
+namespace CodersCare\Device\ExpressionLanguage;
 
-use CodersCare\Tracer\ExpressionLanguage\FunctionsProvider\UserAgentConditionFunctionsProvider;
+use CodersCare\Device\ExpressionLanguage\FunctionsProvider\UserAgentConditionFunctionsProvider;
 use TYPO3\CMS\Core\ExpressionLanguage\AbstractProvider;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 

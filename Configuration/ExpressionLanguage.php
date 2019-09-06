@@ -2,6 +2,6 @@
 
 return [
     'typoscript' => [
-        \CodersCare\Tracer\ExpressionLanguage\UserAgentConditionProvider::class,
+        \CodersCare\Device\ExpressionLanguage\UserAgentConditionProvider::class,
     ]
 ];
