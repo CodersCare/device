@@ -1,0 +1,15 @@
+{
+  "name": "coderscare/tracer",
+  "description": "Tracer - Device Detection - Offers additional TypoScript conditions for user agent detections based on the Piwik Device Detector Library",
+  "type": "typo3-cms-extension",
+  "version": "3.12.0",
+  "require": {
+    "typo3/cms-core": "^9.5",
+    "piwik/device-detector": "3.12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodersCare\\Tracer\\": "Classes"
+    }
+  }
+}
