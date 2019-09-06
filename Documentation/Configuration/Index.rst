@@ -77,6 +77,9 @@ Desktop
    Description
         Detects if the user agent is a desktop computer. [device("Desktop")]
 
+..  tip::
+    Desktop devices are all devices with an unknown type that are running a desktop OS
+
 .. _FeaturePhone:
 
 FeaturePhone
@@ -141,6 +144,9 @@ Mobile
          string
    Description
         Detects if the user agent is any kind of mobile device. [device("Mobile")]
+
+..  important::
+    Mobile devices are all devices that are either a camera, a phablet, a portable media player, a smartphone or a tablet. So make sure to use the right order for conditions, if you combine it with conditions for specific mobile device types!
 
 .. _MobileApp:
 
