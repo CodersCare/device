@@ -129,18 +129,18 @@ MediaPlayer
    Description
         Detects if the user agent is a media player. [device("MediaPlayer")]
 
-.. _MobileApp:
+.. _Mobile:
 
-MobileApp
+Mobile
 """""""""""
 .. container:: table-row
 
    Property
-         MobileApp
+         Mobile
    Data type
          string
    Description
-        Detects if the user agent is a mobile app. [device("MobileApp")]
+        Detects if the user agent is any kind of mobile device. [device("Mobile")]
 
 .. _MobileApp:
 

@@ -62,6 +62,9 @@ class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderI
                 case 'MediaPlayer':
                     return $dd->isMediaPlayer();
                     break;
+                case 'Mobile':
+                    return $dd->isMobile();
+                    break;
                 case 'MobileApp':
                     return $dd->isMobileApp();
                     break;
