@@ -9,8 +9,8 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array (
-	'title' => 'Device',
-	'description' => 'Offers additional TypoScript conditions for user agent detections based on the Piwik Device Detector Library',
+	'title' => 'Device Conditions',
+	'description' => 'Provides additional TypoScript conditions for user agent detections based on the Piwik Device Detector library',
 	'category' => 'misc',
 	'version' => '9.0.0',
 	'state' => 'stable',
