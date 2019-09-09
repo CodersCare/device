@@ -2,7 +2,7 @@
   "name": "coderscare/device",
   "description": "Device Conditions - Provides additional TypoScript conditions for user agent detections based on the Piwik Device Detector Library",
   "type": "typo3-cms-extension",
-  "version": "9.0.0",
+  "version": "9.1.0",
   "license": "GPL-2.0-or-later",
   "require": {
     "typo3/cms-core": "^9.5",
