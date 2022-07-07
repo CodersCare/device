@@ -12,7 +12,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  *
  * @internal
  */
-class UserAgentConditionProvider extends AbstractProvider {
+class UserAgentConditionProvider extends AbstractProvider
+{
     public function __construct()
     {
         $this->expressionLanguageVariables = [
