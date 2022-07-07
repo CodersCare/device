@@ -10,9 +10,9 @@
 
 $EM_CONF[$_EXTKEY] = array (
 	'title' => 'Device Conditions',
-	'description' => 'Provides additional TypoScript conditions for user agent detections based on the Piwik Device Detector library',
+	'description' => 'Provides additional TypoScript conditions for user agent detections based on the Matomo Device Detector library',
 	'category' => 'misc',
-	'version' => '9.2.0',
+	'version' => '9.3.0',
 	'state' => 'stable',
 	'clearcacheonload' => 0,
 	'author' => 'Coders.Care',
