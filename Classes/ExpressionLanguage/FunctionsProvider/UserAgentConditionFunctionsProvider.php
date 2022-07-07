@@ -13,7 +13,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * Class UserAgentConditionFunctionsProvider
  * @internal
  */
-class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderInterface {
+class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderInterface
+{
     /**
      * @return ExpressionFunction[] An array of Function instances
      */
@@ -30,64 +31,64 @@ class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderI
             // Not implemented, we only use the evaluator
         }, function ($arguments, $str) {
             AbstractDeviceParser::setVersionTruncation(AbstractDeviceParser::VERSION_TRUNCATION_NONE);
-            /** @var $dd DeviceDetector */
-            $dd = GeneralUtility::makeInstance(DeviceDetector::class);
-            $dd->setUserAgent(GeneralUtility::getIndpEnv('HTTP_USER_AGENT'));
-            $dd->parse();
+            /** @var DeviceDetector $device_detector */
+            $device_detector = GeneralUtility::makeInstance(DeviceDetector::class);
+            $device_detector->setUserAgent(GeneralUtility::getIndpEnv('HTTP_USER_AGENT'));
+            $device_detector->parse();
             switch (trim($str)) {
                 case 'Browser':
-                    return $dd->isBrowser();
+                    return $device_detector->isBrowser();
                     break;
                 case 'Camera':
-                    return $dd->isCamera();
+                    return $device_detector->isCamera();
                     break;
                 case 'CarBrowser':
-                    return $dd->isCarBrowser();
+                    return $device_detector->isCarBrowser();
                     break;
                 case 'Console':
-                    return $dd->isConsole();
+                    return $device_detector->isConsole();
                     break;
                 case 'Desktop':
-                    return $dd->isDesktop();
+                    return $device_detector->isDesktop();
                     break;
                 case 'FeaturePhone':
-                    return $dd->isFeaturephone();
+                    return $device_detector->isFeaturePhone();
                     break;
                 case 'FeedReader':
-                    return $dd->isFeedReader();
+                    return $device_detector->isFeedReader();
                     break;
                 case 'Library':
-                    return $dd->isLibrary();
+                    return $device_detector->isLibrary();
                     break;
                 case 'MediaPlayer':
-                    return $dd->isMediaPlayer();
+                    return $device_detector->isMediaPlayer();
                     break;
                 case 'Mobile':
-                    return $dd->isMobile();
+                    return $device_detector->isMobile();
                     break;
                 case 'MobileApp':
-                    return $dd->isMobileApp();
+                    return $device_detector->isMobileApp();
                     break;
                 case 'Phablet':
-                    return $dd->isPhablet();
+                    return $device_detector->isPhablet();
                     break;
                 case 'PIM':
-                    return $dd->isPIM();
+                    return $device_detector->isPIM();
                     break;
                 case 'PortableMediaPlayer':
-                    return $dd->isPortableMediaPlayer();
+                    return $device_detector->isPortableMediaPlayer();
                     break;
                 case 'SmartDisplay':
-                    return $dd->isSmartDisplay();
+                    return $device_detector->isSmartDisplay();
                     break;
                 case 'Smartphone':
-                    return $dd->isSmartphone();
+                    return $device_detector->isSmartphone();
                     break;
                 case 'Tablet':
-                    return $dd->isTablet();
+                    return $device_detector->isTablet();
                     break;
                 case 'TV':
-                    return $dd->isTV();
+                    return $device_detector->isTV();
                     break;
                 default:
                     return false;
