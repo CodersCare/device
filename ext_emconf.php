@@ -12,7 +12,7 @@ $EM_CONF['device'] = [
     'title' => 'Device Conditions',
     'description' => 'Provides additional TypoScript conditions for user agent detections based on the Matomo Device Detector library',
     'category' => 'misc',
-    'version' => '10.0.0',
+    'version' => '11.0.0',
     'state' => 'stable',
     'clearcacheonload' => 0,
     'author' => 'Coders.Care',
@@ -20,7 +20,7 @@ $EM_CONF['device'] = [
     'author_company' => 'Coders.Care',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-10.4.99',
+            'typo3' => '10.4.0-11.5.99',
         ],
         'conflicts' => [],
         'suggests' => [],
