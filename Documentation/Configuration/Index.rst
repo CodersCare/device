@@ -12,6 +12,19 @@ Just use one of the listed conditions with the following syntax
 Settings
 ========
 
+.. _Bot:
+
+Bot
+"""""""""""
+.. container:: table-row
+
+   Property
+         Bot
+   Data type
+         string
+   Description
+        Detects if the user agent is a known bot. [device("Bot")]
+
 .. _Browser:
 
 Browser
@@ -161,6 +174,19 @@ MobileApp
    Description
         Detects if the user agent is a mobile app. [device("MobileApp")]
 
+.. _Peripheral
+
+Peripheral
+"""""""""""
+.. container:: table-row
+
+   Property
+         Peripheral
+   Data type
+         string
+   Description
+        Detects if the user agent is a peripheral. [device("Peripheral")]
+
 .. _Phablet:
 
 Phablet
@@ -213,6 +239,19 @@ SmartDisplay
    Description
         Detects if the user agent is a smart display. [device("SmartDisplay")]
 
+.. _SmartSpeaker:
+
+SmartSpeaker
+"""""""""""
+.. container:: table-row
+
+   Property
+         SmartSpeaker
+   Data type
+         string
+   Description
+        Detects if the user agent is a smart speaker. [device("SmartSpeaker")]
+
 .. _Smartphone:
 
 Smartphone
@@ -239,6 +278,19 @@ Tablet
    Description
         Detects if the user agent is a tablet. [device("Tablet")]
 
+.. _TouchEnabled:
+
+TouchEnabled
+"""""""""""
+.. container:: table-row
+
+   Property
+         TouchEnabled
+   Data type
+         string
+   Description
+        Detects if the user agent is touch enabled. [device("TouchEnabled")]
+
 .. _TV:
 
 TV
@@ -251,3 +303,16 @@ TV
          string
    Description
         Detects if the user agent is a TV. [device("TV")]
+
+.. _Wearable:
+
+Wearable
+"""""""""""
+.. container:: table-row
+
+   Property
+         Wearable
+   Data type
+         string
+   Description
+        Detects if the user agent is a wearable. [device("Wearable")]
