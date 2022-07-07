@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace CodersCare\Device\ExpressionLanguage\FunctionsProvider;
 
 use DeviceDetector\DeviceDetector;
-use DeviceDetector\Parser\Device\DeviceParserAbstract;
+use DeviceDetector\Parser\Device\AbstractDeviceParser;
 use Symfony\Component\ExpressionLanguage\ExpressionFunction;
 use Symfony\Component\ExpressionLanguage\ExpressionFunctionProviderInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -29,7 +29,7 @@ class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderI
         return new ExpressionFunction('device', function () {
             // Not implemented, we only use the evaluator
         }, function ($arguments, $str) {
-            DeviceParserAbstract::setVersionTruncation(DeviceParserAbstract::VERSION_TRUNCATION_NONE);
+            AbstractDeviceParser::setVersionTruncation(AbstractDeviceParser::VERSION_TRUNCATION_NONE);
             /** @var $dd DeviceDetector */
             $dd = GeneralUtility::makeInstance(DeviceDetector::class);
             $dd->setUserAgent(GeneralUtility::getIndpEnv('HTTP_USER_AGENT'));
