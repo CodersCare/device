@@ -37,7 +37,7 @@ class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderI
             $device_detector->parse();
             switch (trim($str)) {
                 case 'Bot':
-                    return $dd->isBot();
+                    return $device_detector->isBot();
                     break;
                 case 'Browser':
                     return $device_detector->isBrowser();
@@ -73,7 +73,7 @@ class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderI
                     return $device_detector->isMobileApp();
                     break;
                 case 'Peripheral':
-                    return $dd->isPeripheral();
+                    return $device_detector->isPeripheral();
                     break;
                 case 'Phablet':
                     return $device_detector->isPhablet();
@@ -88,7 +88,7 @@ class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderI
                     return $device_detector->isSmartDisplay();
                     break;
                 case 'SmartSpeaker':
-                    return $dd->isSmartSpeaker();
+                    return $device_detector->isSmartSpeaker();
                     break;
                 case 'Smartphone':
                     return $device_detector->isSmartphone();
@@ -97,13 +97,13 @@ class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderI
                     return $device_detector->isTablet();
                     break;
                 case 'TouchEnabled':
-                    return $dd->isTouchEnabled();
+                    return $device_detector->isTouchEnabled();
                     break;
                 case 'TV':
                     return $device_detector->isTV();
                     break;
                 case 'Wearable':
-                    return $dd->isWearable();
+                    return $device_detector->isWearable();
                     break;
                 default:
                     return false;
