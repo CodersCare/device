@@ -10,7 +10,7 @@ Installation
 
 .. tip::
 
-   Device versions are always matching the TYPO3 version you are running. So version 9.x should be installed with CMS 9.5 only, 10.x with CMS 10.x and so on.
+   Beginning with version 10.0.0 Device versions are always matching the TYPO3 version you are running and the version below. So version 10.x should be installed with CMS 9.5 or 10.4, 11.x with CMS 10.x and 11.x and so on.
 
 The extension needs to be installed as any other extension of TYPO3 CMS:
 

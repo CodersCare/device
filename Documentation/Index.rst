@@ -30,7 +30,7 @@ Device
    `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
    license
 
-Device provides additional TypoScript conditions for user agent detections based on the Piwik Device Detector library
+Device provides additional TypoScript conditions for user agent detections based on the Matomo Device Detector library
 
 **TYPO3**
 

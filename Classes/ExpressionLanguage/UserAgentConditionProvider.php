@@ -13,7 +13,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  *
  * @internal
  */
-class UserAgentConditionProvider extends AbstractProvider {
+class UserAgentConditionProvider extends AbstractProvider
+{
     public function __construct()
     {
         if (!class_exists('Spyc')) {
