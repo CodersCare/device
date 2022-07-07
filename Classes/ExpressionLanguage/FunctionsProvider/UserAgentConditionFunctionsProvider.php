@@ -36,6 +36,9 @@ class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderI
             $device_detector->setUserAgent(GeneralUtility::getIndpEnv('HTTP_USER_AGENT'));
             $device_detector->parse();
             switch (trim($str)) {
+                case 'Bot':
+                    return $device_detector->isBot();
+                    break;
                 case 'Browser':
                     return $device_detector->isBrowser();
                     break;
@@ -69,6 +72,9 @@ class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderI
                 case 'MobileApp':
                     return $device_detector->isMobileApp();
                     break;
+                case 'Peripheral':
+                    return $device_detector->isPeripheral();
+                    break;
                 case 'Phablet':
                     return $device_detector->isPhablet();
                     break;
@@ -81,14 +87,23 @@ class UserAgentConditionFunctionsProvider implements ExpressionFunctionProviderI
                 case 'SmartDisplay':
                     return $device_detector->isSmartDisplay();
                     break;
+                case 'SmartSpeaker':
+                    return $device_detector->isSmartSpeaker();
+                    break;
                 case 'Smartphone':
                     return $device_detector->isSmartphone();
                     break;
                 case 'Tablet':
                     return $device_detector->isTablet();
                     break;
+                case 'TouchEnabled':
+                    return $device_detector->isTouchEnabled();
+                    break;
                 case 'TV':
                     return $device_detector->isTV();
+                    break;
+                case 'Wearable':
+                    return $device_detector->isWearable();
                     break;
                 default:
                     return false;
